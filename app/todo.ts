@@ -53,7 +53,7 @@ function toAlltask(task: string, description: string){
     for (let index=0; index<TodoList.allTodos.length; index++) {
         list = list + "<dt>" + TodoList.allTodos[index].name +'</dt> <dd>' + TodoList.allTodos[index].description + '</dd>';
     }
-    list += "/dl"
+    list += "</dl>"
     div.innerHTML = list;
 
     //Casting
